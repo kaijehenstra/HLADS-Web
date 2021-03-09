@@ -7,7 +7,7 @@ import './App.css';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#1FBBE6",
+      main:"#0A1128",
     },
     secondary: {
       main:"#1282A2",
@@ -51,9 +51,40 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
         <div className={classes.wrapper}>
-          <Typography variant="h4" className={classes.bigSpace} color="primary">
-              test
-            </Typography>
+          <switch>
+            <route exact path="/">
+              <container>
+                <Typography variant="h4" className={classes.bigSpace} color="primary">
+                  test
+                </Typography>
+              </container>
+            </route>
+
+            <route exact path="/webhosting">
+              <container>
+                <Typography variant="h4" className={classes.bigSpace} color="primary">
+                  test wh
+                </Typography>
+              </container>
+            </route>
+
+            <route exact path="/dedicated_webhosting">
+              <container>
+                <Typography variant="h4" className={classes.bigSpace} color="primary">
+                  test wd
+                </Typography>
+              </container>
+            </route>
+
+            <route exact path="/services">
+              <container>
+                <Typography variant="h4" className={classes.bigSpace} color="primary">
+                  test serv
+                </Typography>
+              </container>
+            </route>
+            
+          </switch>
         </div>
         <Footer/>
       </ThemeProvider>
