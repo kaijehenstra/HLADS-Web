@@ -25,6 +25,7 @@ const styles = makeStyles({
 
 function NavBar() {
     const classes = styles()
+    
     return (
         <AppBar>
             <Toolbar position="sticky" className={classes.bar}> 

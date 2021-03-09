@@ -1,7 +1,8 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import {Typography} from '@material-ui/core'; 
+import { Route, Router, Switch } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import Home from './components/Home'
 import './App.css';
 
 const theme = createMuiTheme({
@@ -48,12 +49,10 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <NavBar/>
-        <div className={classes.wrapper}>
-          
-        </div>
-        <Footer/>
+        <ThemeProvider theme={theme}>
+          <NavBar/>
+          <Home/>         
+          <Footer/>
       </ThemeProvider>
     </div>
   );
