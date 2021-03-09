@@ -51,40 +51,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
         <div className={classes.wrapper}>
-          <switch>
-            <route exact path="/">
-              <container>
-                <Typography variant="h4" className={classes.bigSpace} color="primary">
-                  test
-                </Typography>
-              </container>
-            </route>
-
-            <route exact path="/webhosting">
-              <container>
-                <Typography variant="h4" className={classes.bigSpace} color="primary">
-                  test wh
-                </Typography>
-              </container>
-            </route>
-
-            <route exact path="/dedicated_webhosting">
-              <container>
-                <Typography variant="h4" className={classes.bigSpace} color="primary">
-                  test wd
-                </Typography>
-              </container>
-            </route>
-
-            <route exact path="/services">
-              <container>
-                <Typography variant="h4" className={classes.bigSpace} color="primary">
-                  test serv
-                </Typography>
-              </container>
-            </route>
-            
-          </switch>
+          
         </div>
         <Footer/>
       </ThemeProvider>

@@ -1,10 +1,7 @@
 import React from 'react'
-import CustomBtn from './CustomBtn'
 import logo from '../logo.png'
-import {Toolbar, Typography} from '@material-ui/core'
+import {AppBar, Toolbar, Typography} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles"
-import { Link } from 'react-router-dom';
-
 
 const styles = makeStyles({
     bar:{
@@ -17,6 +14,7 @@ const styles = makeStyles({
     menuItem: {
         cursor: "pointer", 
         flexGrow: 1,
+        color: "rgba(0,0,0,0.87)",
         "&:hover": {
             color:  "#1FBBE6"
         },
@@ -28,22 +26,23 @@ const styles = makeStyles({
 function NavBar() {
     const classes = styles()
     return (
-            <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}> 
+        <AppBar>
+            <Toolbar position="sticky" className={classes.bar}> 
                     <img src={logo} className={classes.logo} alt=""/>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link to="/">Home</Link>
+                        Home
                     </Typography>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link to="/">Webhosting</Link>
+                        Webhosting
                     </Typography>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link to="/">Dedicated Webhosting</Link>
+                        Dedicated webhosting
                     </Typography>
                     <Typography variant="h6" className={classes.menuItem}>
-                        <Link to="/">Services</Link>
+                        Services
                     </Typography>
-                    <CustomBtn txt="Contact"/>
             </Toolbar>
+        </AppBar>
     )
 }
 
