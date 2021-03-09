@@ -14,7 +14,6 @@ const StyledButton = withStyles({
         background: "#1FBBE6",
         color: "#fff",
         transform: "none",
-        boxShadow: "6px 6px 0 0 #c7d8ed",
         transition: "background .3s,border-color .3s,color .3s",
         "&:hover": {
             backgroundColor:  "#1FBBE6"
