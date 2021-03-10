@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Dedicated_webhosting() {
+function DedicatedWebhosting() {
     return (
         <div>
             <h1>dwh</h1>
@@ -8,4 +8,4 @@ function Dedicated_webhosting() {
     )
 }
 
-export default Dedicated_webhosting
+export default DedicatedWebhosting
