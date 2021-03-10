@@ -1,5 +1,5 @@
-import React from 'react'
-import {BottomNavigation, BottomNavigationAction} from '@material-ui/core'
+import React from 'react';
+import {BottomNavigation, BottomNavigationAction} from '@material-ui/core';
 
 function Footer() {
     return (

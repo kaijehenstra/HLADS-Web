@@ -1,7 +1,7 @@
-import React from 'react'
-import logo from '../logo.png'
-import {AppBar, Toolbar, Typography} from '@material-ui/core'
-import {makeStyles} from '@material-ui/core/styles'
+import React from 'react';
+import logo from '../logo.png';
+import {AppBar, Toolbar, Typography} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
 
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ const styles = makeStyles({
     },
     menuItem: {
         textDecoration: "none",
+        textAlign: "center",
         cursor: "pointer", 
         flexGrow: 1,
         color: "rgba(0,0,0,0.87)",
@@ -51,7 +52,7 @@ function NavBar() {
                     </Typography>
                     </Link>
 
-                    <Link className={classes.menuItem} to="/Contact">
+                    <Link className={classes.menuItem} to="/contact">
                     <Typography variant="h6">
                         Contact
                     </Typography>

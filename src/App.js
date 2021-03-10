@@ -1,12 +1,12 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import Webhosting from './components/Webhosting'
-import DedicatedWebhosting from './components/DedicatedWebhosting'
-import Contact from './components/Contact'
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Webhosting from './components/Webhosting';
+import DedicatedWebhosting from './components/DedicatedWebhosting';
+import Contact from './components/Contact';
 
 import './App.css';
 
@@ -35,26 +35,14 @@ const theme = createMuiTheme({
   },
 });
 
-const styles = makeStyles({
-  wrapper: {
-    width: "65%",
-    margin: "auto",
-    textAlign: "center"
-  },
-  bigSpace: {
-    marginTop: "5rem"
-  },
-  littleSpace:{
-    marginTop: "2.5rem",
-  },
-})
+const styles = makeStyles({})
 
 function App() {
   const classes = styles(); 
 
   return (
     <Router>
-      <div className="App">
+      <div className={classes.container}>
           <ThemeProvider theme={theme}>
             <NavBar/>
 
