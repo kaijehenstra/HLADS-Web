@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 function DedicatedWebhosting() {
     return (
         <div>
-            <h1>dwh</h1>
+            <h1>DW</h1>
         </div>
     )
 }

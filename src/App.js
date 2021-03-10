@@ -1,5 +1,5 @@
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -13,7 +13,7 @@ import './App.css';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#0A1128",
+      main:"#fff",
     },
     secondary: {
       main:"#1282A2",
@@ -41,7 +41,6 @@ function App() {
   const classes = styles(); 
 
   return (
-    <Router>
       <div className={classes.container}>
           <ThemeProvider theme={theme}>
             <NavBar/>
@@ -54,9 +53,8 @@ function App() {
           </Switch>
 
             <Footer/>
-        </ThemeProvider>
+          </ThemeProvider>
       </div>
-    </Router>
   );
 }
 
