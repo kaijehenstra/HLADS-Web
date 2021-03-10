@@ -16,7 +16,7 @@ function Home() {
 
     return (
         <div className={classes.wrapper}>
-            <Typography className={classes.item} variant="h1">Home</Typography>
+            <h1>test</h1>    
         </div>
     )
 }
