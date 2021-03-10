@@ -1,22 +1,46 @@
 import React from 'react';
-import { BottomNavigation } from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-const styles = makeStyles({
-    footer: {
-        backgroundColor: "#0A1128",
-        color: 'white',
-    }
-})
-
-function Footer() {
-    const classes = styles()
-
-    return (
-        <BottomNavigation className={classes.footer}>
-            <h1>test</h1>
-        </BottomNavigation>
-    )
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary">
+      {'Copyright © '}
+      <Link color="inherit" href="/contact">
+        HLADS
+      </Link>{' '}
+      {new Date().getFullYear()}
+    </Typography>
+  );
 }
 
-export default Footer
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  },
+  footer: {
+    padding: theme.spacing(3, 2),
+    marginTop: 'auto',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+  },
+}));
+
+export default function StickyFooter() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <footer className={classes.footer}>
+        <Container maxWidth="sm">
+          <Typography variant="body1">Created by founder Kaije Henstra</Typography>
+          <Copyright />
+        </Container>
+      </footer>
+    </div>
+  );
+}
