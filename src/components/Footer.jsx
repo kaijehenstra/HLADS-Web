@@ -1,5 +1,5 @@
 import React from 'react';
-import { BottomNavigation, colors } from '@material-ui/core';
+import { BottomNavigation } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 const styles = makeStyles({

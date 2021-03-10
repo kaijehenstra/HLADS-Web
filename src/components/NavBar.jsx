@@ -23,7 +23,7 @@ const styles = makeStyles({
             color:  "#1FBBE6"
         },
         ['@media (max-width:780px)']: { 
-            paddingBottom: "1rem"    }
+            paddingBottom: "1rem"    },
     }
 })
 
@@ -31,31 +31,23 @@ function NavBar() {
     const classes = styles()
     
     return (
-        <AppBar>
+        <AppBar position="static">
             <Toolbar position="sticky" className={classes.bar}> 
                     <img src={logo} className={classes.logo} alt=""/>
                     <Link className={classes.menuItem} to="/">
-                    <Typography variant="h6">
-                        Home
-                    </Typography>
+                        <Typography variant="h6">Home</Typography>
                     </Link>
 
                     <Link className={classes.menuItem} to="/webhosting">
-                    <Typography variant="h6">
-                        Webhosting
-                    </Typography>
+                        <Typography variant="h6">Webhosting</Typography>
                     </Link>
 
                     <Link className={classes.menuItem} to="/dedicatedwebhosting">
-                    <Typography variant="h6">
-                        Dedicated webhosting
-                    </Typography>
+                        <Typography variant="h6">Dedicated webhosting</Typography>
                     </Link>
 
                     <Link className={classes.menuItem} to="/contact">
-                    <Typography variant="h6">
-                        Contact
-                    </Typography>
+                        <Typography variant="h6">Contact</Typography>
                     </Link>
             </Toolbar>
         </AppBar>
