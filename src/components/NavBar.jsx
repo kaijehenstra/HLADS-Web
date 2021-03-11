@@ -33,7 +33,10 @@ function NavBar() {
     return (
         <AppBar position="static">
             <Toolbar position="sticky" className={classes.bar}> 
-                    <img src={logo} className={classes.logo} alt=""/>
+                    <Link className={classes.logo} to="/">
+                        <img src={logo} alt=""/>
+                    </Link>
+                    
                     <Link className={classes.menuItem} to="/">
                         <Typography variant="h6">Home</Typography>
                     </Link>
@@ -44,6 +47,10 @@ function NavBar() {
 
                     <Link className={classes.menuItem} to="/dedicatedwebhosting">
                         <Typography variant="h6">Dedicated webhosting</Typography>
+                    </Link>
+                    
+                    <Link className={classes.menuItem} to="/network">
+                        <Typography variant="h6">Network solutions</Typography>
                     </Link>
 
                     <Link className={classes.menuItem} to="/contact">
