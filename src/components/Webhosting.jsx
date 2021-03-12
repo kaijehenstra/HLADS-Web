@@ -1,14 +1,21 @@
 import React from 'react'
-import {Typography} from '@material-ui/core'
+import {Typography, Container} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
+import bannerWH from '../bannerWH.jpg';
+
 
 const styles = makeStyles({
     wrapper: {
        display: "flex",
-       flexDirection: "column", 
        alignItems: "center", 
-       padding: "0 5rem 0 5rem"
-    }, 
+       flexDirection: "column"
+    },
+    
+    img: {
+        allign: "center",
+        maxWidth: "100%",
+        height: "auto",
+    },
 })
 
 function Webhosting() {
@@ -16,7 +23,7 @@ function Webhosting() {
 
     return (
         <div className={classes.wrapper}>
-            <h1>wh</h1>    
+            <img className={classes.img} src={bannerWH} alt="" />  
         </div>
     )
 }
