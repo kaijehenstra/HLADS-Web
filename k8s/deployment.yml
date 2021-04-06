@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hlads-web
+  labels:
+    app: hlads-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hlads-web
+  template:
+    metadata:
+      labels:
+        app: hlads-web
+    spec:
+      containers:
+      - name: hlads-web
+        image: hlads/website
+        ports:
+        - containerPort: 80
