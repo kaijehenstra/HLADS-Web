@@ -3,6 +3,10 @@ kind: Ingress
 metadata:
   name: hlads-webingress
 spec:
+  tls:
+  - hosts:
+    - hlads.net
+    secretName: hlads-webtls
   rules:
   - host: '*.hlads.net'
     http:
