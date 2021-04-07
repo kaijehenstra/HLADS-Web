@@ -4,7 +4,7 @@ metadata:
   name: hlads-webingress
 spec:
   rules:
-  - host: hlads.net
+  - host: '*.hlads.net'
     http:
       paths:
       - path: /
