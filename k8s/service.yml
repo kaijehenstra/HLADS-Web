@@ -6,4 +6,6 @@ spec:
   selector:
     app: hlads-web
   ports:
-    - port: 80 # Default port for image
+    - protocol: TCP
+      name: http
+      port: 80 # Default port for image

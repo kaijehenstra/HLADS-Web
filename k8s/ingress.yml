@@ -8,7 +8,7 @@ spec:
     - hlads.net
     secretName: hlads-webtls
   rules:
-  - host: '*.hlads.net'
+  - host: hlads.net
     http:
       paths:
       - path: /
