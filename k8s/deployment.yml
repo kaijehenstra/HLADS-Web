@@ -17,5 +17,6 @@ spec:
       containers:
       - name: hlads-web
         image: hlads/website
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
