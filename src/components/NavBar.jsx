@@ -44,10 +44,6 @@ function NavBar() {
                     <Link className={classes.menuItem} to="/webhosting">
                         <Typography variant="h6">Webhosting</Typography>
                     </Link>
-
-                    <Link className={classes.menuItem} to="/dedicatedwebhosting">
-                        <Typography variant="h6">Dedicated webhosting</Typography>
-                    </Link>
                     
                     <Link className={classes.menuItem} to="/network">
                         <Typography variant="h6">Network solutions</Typography>
