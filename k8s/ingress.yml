@@ -1,13 +1,13 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hlads-webingress
+  name: hlads-web-ingress
   namespace: hlads-web-ns
 spec:
   tls:
   - hosts:
     - hlads.net
-    secretName: hlads-webtls
+    secretName: hlads-web-tls
   rules:
   - host: hlads.net
     http:
@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: hlads-webservice
+            name: hlads-web-service
             port:
               number: 80

@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: hlads-webhpa
+  name: hlads-web-hpa
   namespace: hlads-web-ns
 spec:
   scaleTargetRef:
