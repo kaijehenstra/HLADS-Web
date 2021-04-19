@@ -11,7 +11,7 @@ spec:
       maxSurge: 30%
       maxUnavailable: 0
     type: RollingUpdate
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: hlads-web
@@ -24,5 +24,12 @@ spec:
       - name: hlads-web
         image: hlads/website
         imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "10m"
+          limits:
+            memory: "350Mi"
+            cpu: "250m"
         ports:
         - containerPort: 80
