@@ -16,7 +16,9 @@ function Home() {
 
     return (
         <div className={classes.wrapper}>
-            <h1>test</h1>    
+            <Typography variant="h1" component="h1">
+            Welcome
+            </Typography>   
         </div>
     )
 }
