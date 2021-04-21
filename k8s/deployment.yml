@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: hlads-web
-        image: hlads/website:v0.0.1
+        image: hlads/website:0.0.1
         imagePullPolicy: Always
         resources:
           requests:
