@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: hlads-web
-        image: hlads/website:latest
+        image: registry.digitalocean.com/hlads/hlads_react_web:1.0.0
         imagePullPolicy: Always
         resources:
           requests:
